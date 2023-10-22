@@ -1,0 +1,210 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.flex-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-banner {
+    background: url("images/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.half-width {
+    flex-basis: 49%;
+    padding: 6%;
+}
+
+.half-width h1{
+    color: rgb(201, 35, 90);
+    line-height: 3rem;
+}
+
+.half-width h3, h1 {
+    font-size: 3rem;
+    line-height: 1rem;
+    z-index: 4;
+}
+
+.btn {
+    text-decoration: none ;
+    color: #fff;
+    background: linear-gradient(90deg, rgb(253, 105, 130), rgb(252, 78, 107));
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1%;
+}
+
+.half-width img {
+    width: 100%;
+}
+
+
+.biography {
+    background: url("images/biography-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.latest-work {
+    background: url("images/latest-work-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.work-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-img{
+    width: 25%;
+    height: fit-content;
+    padding: 2%;
+}
+
+.footer {
+    flex-direction: column;
+    background: url("images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer h3 {
+    font-size: 2.5rem;
+}
+
+.testimony {
+    text-align: center;
+}
+
+.testimony span {
+    color: gray;
+    font-size: 13px;
+}
+
+.testimony p {
+    font-size: 1.2rem;
+}
+
+.massage {
+    background: linear-gradient(90deg, rgb(253, 105, 130), rgb(252, 78, 107));
+    width: 50%;
+    text-align: center;
+    padding: 50px 40px;
+    color: #fff;
+    margin: 50px 0 80px 0;
+    border-radius: 10px;
+}
+.massage p {
+    font-size: 0.85rem;
+}
+.massage a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    padding-top: 30px;
+}
+
+.copyright p {
+    color: gray;
+}
+
+
+/* Default styles for larger screens */
+/* ... (previous styles remain unchanged) ... */
+
+/* Responsive styles using media queries */
+
+@media screen and (max-width: 800px) {
+    section{
+        margin-bottom: 25%;
+    }
+
+    .half-width {
+        flex-basis: 100%;
+        padding: 10%;
+        text-align: center;
+    }
+
+    .half-width h1, .half-width h3 {
+        font-size: 3rem;
+        line-height: 1.5rem;
+    }
+
+    .work-img {
+        width: 50%;
+    }
+
+    .massage {
+        width: 80%;
+    }
+
+    /* Rearrange image and text for mobile devices */
+    .biography {
+        flex-direction: column;
+    }
+
+    .hero-banner {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .half-width h1, .half-width h3 {
+        font-size: 2rem;
+        line-height: 1.5rem;
+        line-height: 28px;
+    }
+
+    .latest-work h1 {
+        margin-top: 20%;
+    }
+    .work-images {
+        margin-top: 5%;
+        flex-direction: column;
+    }
+    .work-img {
+        width: 80%;
+        display: block;
+    }
+
+    .footer h3 {
+        text-align: center;
+    }
+
+    .testimony {
+        padding: 5%;
+    }
+
+    .massage {
+        width: 80%;
+    }
+
+    .massage p {
+        font-size: 1rem;
+    }
+
+    .massage a {
+        font-size: 1.3rem;
+    }
+
+    .copyright {
+        font-size: 0.75rem;
+        margin-top: -5%;
+        padding-bottom: 5%;
+    }
+}
